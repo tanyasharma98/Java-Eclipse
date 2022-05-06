@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    
+    <!-- Constructor Injection -->
+    <bean id="Laptop" class="com.harman.bean.Laptop">
+    	<property name="LaptopId" value="102" />
+    	<property name="brand" value="HP" />
+    </bean>
+    
+    <!-- Injection Another Bean -->
+    <!-- Property Injection or setter injection -->
+    <bean id="emp" class="com.harman.bean.Employee" init-method = "init" destroy-method = "destroy">
+    	<property name="empId" value="101" />
+    	<property name="name" value="tanya" />
+    	<property name="salary" value="50000" />
+    	<property name = "Laptop" ref="Laptop"/> <!-- ref ->For above id(bean) -->
+    </bean>
+
+</beans>

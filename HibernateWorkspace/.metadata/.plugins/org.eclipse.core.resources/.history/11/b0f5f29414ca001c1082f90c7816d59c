@@ -1,0 +1,5 @@
+package com.harma.util;
+
+public class HibernateUtil {
+
+}

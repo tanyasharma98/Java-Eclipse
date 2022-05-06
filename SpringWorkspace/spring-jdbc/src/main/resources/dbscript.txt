@@ -1,0 +1,9 @@
+USE harmandb
+
+CREATE TABLE employees
+(	employee_id int primary key auto_increment,
+	employee_name varchar(20),
+	email varchar(20),
+	salary double,
+	gender char(1)
+);

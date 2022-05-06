@@ -1,0 +1,68 @@
+package com.harman.bean;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("emp")
+public class Employee {
+	@Value("101")
+	private int empId;
+	@Value("Tanya")
+	private String name;
+	@Value("50000")
+	private double  salary;
+	
+//	private Laptop laptop;
+	
+	public Employee(){
+		//Default Constructor
+		//System.out.println("Constructor Invoked");
+	}
+	
+	public void init() {
+		System.out.println(".....init....");
+	}
+	
+	public void destroy() {
+		System.out.println("Destroyed");
+	}
+
+
+	public int getEmpId() {
+		return empId;
+	}
+
+	public void setEmpId(int empId) {
+		this.empId = empId;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public void setSalary(double salary) {
+		this.salary = salary;
+	}
+
+//	public Laptop getLaptop() {
+//		return laptop;
+//	}
+//
+//	public void setLaptop(Laptop laptop) {
+//		this.laptop = laptop;
+//	}
+
+	@Override
+	public String toString() {
+		return String.format("Employee [empId=%s, name=%s, salary=%s", empId, name, salary);
+	}
+
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.harman.entity.payment"/>
+    <fullyQualifiedTypeName name="com.harman.entity.cards"/>
+    <fullyQualifiedTypeName name="com.harman.entity.cheque"/>
+    <fullyQualifiedTypeName name="java.lang.module.Configuration"/>
+</qualifiedTypeNameHistroy>

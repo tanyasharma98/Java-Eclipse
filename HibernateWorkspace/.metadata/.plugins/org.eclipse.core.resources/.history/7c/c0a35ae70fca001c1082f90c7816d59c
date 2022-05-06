@@ -1,0 +1,13 @@
+package com.harman.Hibernate_JPA_joined_table_inheritance;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+        System.out.println( "Hello World!" );
+    }
+}
